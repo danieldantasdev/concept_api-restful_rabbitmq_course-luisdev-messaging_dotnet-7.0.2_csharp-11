@@ -4,6 +4,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.RabbitMqClient", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.EasyNetQ", "Messaging.EasyNetQ\Messaging.EasyNetQ.csproj", "{5F411767-98BE-4A5E-86F3-1CE777EE65A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.RabbitMqClient.Customers.Api", "Messaging.RabbitMqClient.Customers.Api\Messaging.RabbitMqClient.Customers.Api.csproj", "{037E53B9-2864-4E7E-8694-0433833BE74F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.RabbitMqClient.Marketing.Api", "Messaging.RabbitMqClient.Marketing.Api\Messaging.RabbitMqClient.Marketing.Api.csproj", "{83389F14-8CD6-466A-AB70-361F7C130714}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.Shared", "Messaging.Shared\Messaging.Shared.csproj", "{8DEA996E-5306-4789-AE92-201B64AD3BB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{5F411767-98BE-4A5E-86F3-1CE777EE65A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F411767-98BE-4A5E-86F3-1CE777EE65A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F411767-98BE-4A5E-86F3-1CE777EE65A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{037E53B9-2864-4E7E-8694-0433833BE74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037E53B9-2864-4E7E-8694-0433833BE74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037E53B9-2864-4E7E-8694-0433833BE74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037E53B9-2864-4E7E-8694-0433833BE74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83389F14-8CD6-466A-AB70-361F7C130714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83389F14-8CD6-466A-AB70-361F7C130714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83389F14-8CD6-466A-AB70-361F7C130714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83389F14-8CD6-466A-AB70-361F7C130714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DEA996E-5306-4789-AE92-201B64AD3BB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DEA996E-5306-4789-AE92-201B64AD3BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DEA996E-5306-4789-AE92-201B64AD3BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DEA996E-5306-4789-AE92-201B64AD3BB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
