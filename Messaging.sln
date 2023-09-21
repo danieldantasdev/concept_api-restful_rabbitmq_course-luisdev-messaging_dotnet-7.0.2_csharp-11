@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.EasyNetQ.Customer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.EasyNetQ.Marketing.Api", "Messaging.EasyNetQ.Marketing.Api\Messaging.EasyNetQ.Marketing.Api.csproj", "{F44990F7-27DF-4554-AC0A-A6B8683BCE38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.MassTransit.Customers.Api", "Messaging.MassTransit.Customers.Api\Messaging.MassTransit.Customers.Api.csproj", "{4A69DEC6-A865-4637-88C2-D6CC436087C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.MassTransit.Marketing.Api", "Messaging.MassTransit.Marketing.Api\Messaging.MassTransit.Marketing.Api.csproj", "{D5D1E2EE-DEC4-4DEC-BD40-C4538A0DDA42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +52,13 @@ Global
 		{F44990F7-27DF-4554-AC0A-A6B8683BCE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F44990F7-27DF-4554-AC0A-A6B8683BCE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F44990F7-27DF-4554-AC0A-A6B8683BCE38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A69DEC6-A865-4637-88C2-D6CC436087C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A69DEC6-A865-4637-88C2-D6CC436087C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A69DEC6-A865-4637-88C2-D6CC436087C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A69DEC6-A865-4637-88C2-D6CC436087C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D1E2EE-DEC4-4DEC-BD40-C4538A0DDA42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D1E2EE-DEC4-4DEC-BD40-C4538A0DDA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D1E2EE-DEC4-4DEC-BD40-C4538A0DDA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D1E2EE-DEC4-4DEC-BD40-C4538A0DDA42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
