@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.RabbitMqClient.Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.Shared", "Messaging.Shared\Messaging.Shared.csproj", "{8DEA996E-5306-4789-AE92-201B64AD3BB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.EasyNetQ.Customers.Api", "Messaging.EasyNetQ.Customers.Api\Messaging.EasyNetQ.Customers.Api.csproj", "{8AC07AB6-3F4D-4498-80CB-DC94374BF996}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.EasyNetQ.Marketing.Api", "Messaging.EasyNetQ.Marketing.Api\Messaging.EasyNetQ.Marketing.Api.csproj", "{F44990F7-27DF-4554-AC0A-A6B8683BCE38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{8DEA996E-5306-4789-AE92-201B64AD3BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DEA996E-5306-4789-AE92-201B64AD3BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DEA996E-5306-4789-AE92-201B64AD3BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC07AB6-3F4D-4498-80CB-DC94374BF996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC07AB6-3F4D-4498-80CB-DC94374BF996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC07AB6-3F4D-4498-80CB-DC94374BF996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC07AB6-3F4D-4498-80CB-DC94374BF996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44990F7-27DF-4554-AC0A-A6B8683BCE38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44990F7-27DF-4554-AC0A-A6B8683BCE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44990F7-27DF-4554-AC0A-A6B8683BCE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44990F7-27DF-4554-AC0A-A6B8683BCE38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
