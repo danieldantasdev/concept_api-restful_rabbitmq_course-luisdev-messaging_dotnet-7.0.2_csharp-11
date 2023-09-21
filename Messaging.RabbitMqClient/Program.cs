@@ -2,6 +2,7 @@
 using RabbitMQ.Client.Events;
 using System.Text;
 using System.Text.Json;
+using Messaging.RabbitMqClient.Models;
 
 const string EXCHANGE = "curso-rabbitmq";
 const string ROUTING_KEY = "hr.person-created";
@@ -24,18 +25,22 @@ var byteArray = Encoding.UTF8.GetBytes(json);
 channel.BasicPublish(EXCHANGE, ROUTING_KEY, null, byteArray);
 Console.WriteLine($"Message published: {json}");
 
-Console.ReadLine();
+//Consumindo a mensagem
+var consumerChannel = connection.CreateModel();
+var consumer = new EventingBasicConsumer(consumerChannel);
 
-class Person
+consumer.Received += (sender, eventArgs) =>
 {
-    public Person(string fullName, string document, DateTime birthDate)
-    {
-        FullName = fullName;
-        Document = document;
-        BirthDate = birthDate;
-    }
+    var contentArray = eventArgs.Body.ToArray();
+    var contentString = Encoding.UTF8.GetString(contentArray);
 
-    public string FullName { get; set; }
-    public string Document { get; set; }
-    public DateTime BirthDate { get; set; }
-}
+    var message = JsonSerializer.Deserialize<Person>(contentString);
+
+    Console.WriteLine($"Message received: {contentString}");
+
+    consumerChannel.BasicAck(eventArgs.DeliveryTag, false);
+};
+
+consumerChannel.BasicConsume("person-created", false, consumer);
+
+Console.ReadLine();
